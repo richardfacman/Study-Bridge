@@ -2,42 +2,119 @@
 node_modules/
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 
 # Environment variables
 .env
 .env.local
 .env.development
 .env.production
+.env.test
+.env*.local
 
 # Build files
 dist/
 build/
 *.log
+logs/
+*.tsbuildinfo
 
-# IDE
+# IDE & Editor
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
 
-# Uploads
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+.nyc_output/
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache
+.npm
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+.yarn-integrity
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+.env.example.local
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Uploads & temporary files
 backend/uploads/*
 !backend/uploads/.gitkeep
-
-# Temporary files
 *.tmp
 *.temp
+temp/
 
-# Debug
+# Test related
+.mocha
+test-results.xml
+
+# Docker
+docker-compose.override.yml
+
+# Production builds
+/backend/dist
+/frontend/dist
+/frontend/build
+
+# Bundle analyzer
+report.html
+report.json
+
+# IDE specific
+.vscode/settings.json
+.vscode/extensions.json
+.idea/workspace.xml
+.idea/tasks.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Production
-/backend/dist
-/frontend/dist
+lerna-debug.log*
+.pnpm-debug.log*
